@@ -3,6 +3,7 @@ package junitdemo.forwor.com.junitdemo;
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
+import android.text.TextUtils;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,5 +23,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("junitdemo.forwor.com.junitdemo", appContext.getPackageName());
+        assertTrue(TextUtils.isEmpty("1"));
     }
 }
